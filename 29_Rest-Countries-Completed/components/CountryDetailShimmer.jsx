@@ -2,21 +2,17 @@ import React from "react";
 import "./CountryDetailShimmer.css";
 export const CountryDetailShimmer = () => {
   return (
-    <div className="country-details-container">
-      <div className="country-image"></div>
+    <div className="country-details shimmer">
+      <div className="flag"></div>
       <div className="details-text-container">
-        <div className="heading"></div>
-        <div className="details-text">
-          <div className="each-detail"></div>
-          <div className="each-detail"></div>
-          <div className="each-detail"></div>
-          <div className="each-detail"></div>
-          <div className="each-detail"></div>
-          <div className="each-detail"></div>
-          <div className="each-detail"></div>
+        <h1 className="title"></h1>
+        <div className="">
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
         </div>
-        <div className="border-countries"></div>
       </div>
     </div>
-  );
-};
+  )
+}
