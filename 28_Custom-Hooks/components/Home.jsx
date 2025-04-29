@@ -1,12 +1,13 @@
 import Searchbar from "./Searchbar";
 import SelectMenu from "./SelectMenu";
 import CountriesList from "./CountriesList";
-import { useContext, useState } from "react";
-import { ThemeContext } from "../contexts/ThemeContext";
+import { useState } from "react";
+import { useTheme } from "../hooks/useTheme";
+
 
 export default function Home() {
   const [query, setQuery] = useState("");
-  const [isDark] = useContext(ThemeContext);
+  const [isDark] = useTheme()
 
   return (
     <main className={`${isDark ? "dark" : ""}`}>

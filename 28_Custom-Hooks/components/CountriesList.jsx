@@ -4,6 +4,8 @@ import { CountriesListShimmer } from "./CountriesListShimmer";
 export default function CountriesList({ query }) {
   const [countriesData, setCountriesData] = useState([]);
 
+  // const [filteredData, setQuery] = useFilter(data, () => "")
+
   useEffect(() => {
     fetch("https://restcountries.com/v3.1/all")
       .then((res) => res.json())

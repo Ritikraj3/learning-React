@@ -1,9 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./CountryDetail.css";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { CountryDetailShimmer } from "./CountryDetailShimmer";
-import { ThemeContext } from "/contexts/ThemeContext";
+import { useTheme } from "../hooks/useTheme";
+
+
 
 export default function CountryDetail() {
   const params = useParams();
@@ -12,7 +14,7 @@ export default function CountryDetail() {
   const { state } = useLocation();
   // console.log(state)
 
-  const [isDark] = useContext(ThemeContext);
+  const [isDark] = useTheme()
 
   const [countryData, setCountryData] = useState(null);
   const [notFound, setNotFound] = useState(false);
