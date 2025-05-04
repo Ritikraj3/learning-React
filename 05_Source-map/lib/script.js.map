@@ -1,0 +1,36 @@
+{
+    "version": 3,
+    "file": "script.js",
+    "names": [
+        "container",
+        "React",
+        "createElement",
+        "className",
+        "id",
+        "src",
+        "style",
+        "width",
+        "backgroundColor",
+        "borderRadius",
+        "padding",
+        "htmlFor",
+        "cursor",
+        "type",
+        "console",
+        "log",
+        "root",
+        "ReactDOM",
+        "createRoot",
+        "document",
+        "querySelector",
+        "render"
+    ],
+    "sources": [
+        "../script.js"
+    ],
+    "sourcesContent": [
+        "const container = \r\n<div className =\"container\" id=\"container\">\r\n        <section>\r\n            <p>I am learning React.js</p>\r\n            <img src=\"https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg\" \r\n            style={{ \r\n                width: 200,\r\n                backgroundColor: 'black' , \r\n                borderRadius:12, \r\n                padding: 32}} />\r\n        </section>\r\n        <section>\r\n            <form> \r\n                <div className =\"input-container\">\r\n                    <label htmlFor=\"username\" \r\n                    style={{cursor: 'pointer' }}>username</label>\r\n                    <input id=\"username\" />\r\n                </div>\r\n\r\n                <div className =\"input-container\">\r\n                    <label htmlFor=\"password\" \r\n                    style={{cursor: 'pointer' }}>username</label>\r\n                    <input id=\"password\" type=\"password\" />\r\n                </div>\r\n            </form>\r\n        </section>\r\n    </div>\r\n\r\nconsole.log(container);\r\n\r\nconst root = ReactDOM.createRoot(document.querySelector('#root'))\r\n\r\nroot.render(container)\r\n\r\n\r\n\r\n\r\n"
+    ],
+    "mappings": "AAAA,MAAMA,SAAS,gBACfC,KAAA,CAAAC,aAAA;EAAKC,SAAS,EAAE,WAAW;EAACC,EAAE,EAAC;AAAW,gBAClCH,KAAA,CAAAC,aAAA,+BACID,KAAA,CAAAC,aAAA,YAAG,wBAAyB,CAAC,eAC7BD,KAAA,CAAAC,aAAA;EAAKG,GAAG,EAAC,wEAAwE;EACjFC,KAAK,EAAE;IACHC,KAAK,EAAE,GAAG;IACVC,eAAe,EAAE,OAAO;IACxBC,YAAY,EAAC,EAAE;IACfC,OAAO,EAAE;EAAE;AAAE,CAAE,CACd,CAAC,eACVT,KAAA,CAAAC,aAAA,+BACID,KAAA,CAAAC,aAAA,4BACID,KAAA,CAAAC,aAAA;EAAKC,SAAS,EAAE;AAAiB,gBAC7BF,KAAA,CAAAC,aAAA;EAAOS,OAAO,EAAC,UAAU;EACzBL,KAAK,EAAE;IAACM,MAAM,EAAE;EAAU;AAAE,GAAC,UAAe,CAAC,eAC7CX,KAAA,CAAAC,aAAA;EAAOE,EAAE,EAAC;AAAU,CAAE,CACrB,CAAC,eAENH,KAAA,CAAAC,aAAA;EAAKC,SAAS,EAAE;AAAiB,gBAC7BF,KAAA,CAAAC,aAAA;EAAOS,OAAO,EAAC,UAAU;EACzBL,KAAK,EAAE;IAACM,MAAM,EAAE;EAAU;AAAE,GAAC,UAAe,CAAC,eAC7CX,KAAA,CAAAC,aAAA;EAAOE,EAAE,EAAC,UAAU;EAACS,IAAI,EAAC;AAAU,CAAE,CACrC,CACH,CACD,CACR,CAAC;AAEVC,OAAO,CAACC,GAAG,CAACf,SAAS,CAAC;AAEtB,MAAMgB,IAAI,GAAGC,QAAQ,CAACC,UAAU,CAACC,QAAQ,CAACC,aAAa,CAAC,OAAO,CAAC,CAAC;AAEjEJ,IAAI,CAACK,MAAM,CAACrB,SAAS,CAAC",
+    "ignoreList": []
+}

@@ -1,0 +1,9 @@
+.button {
+  background-color: violet;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.textSize {
+  font-size: 4rem;
+}
