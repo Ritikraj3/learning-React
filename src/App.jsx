@@ -5,14 +5,14 @@ import ExpenseTable from './components/ExpenseTable'
 import expenseData from './expenseData'
 
 function App() {
-  const [expense, setExpense] = useState(expenseData)
+  const [expense, setExpenses] = useState(expenseData)
 
   return (
     <>
      <main>
       <h1>Track Your Expense</h1>
       <div className="expense-tracker">
-        <ExpenseForm/>
+        <ExpenseForm setExpenses = {setExpenses} />
         <ExpenseTable expenses = {expense} />
         
       </div>
