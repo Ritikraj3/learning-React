@@ -59,20 +59,26 @@ export default function ExpenseForm({
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    const validateResult = validate(expense);
-    if (Object.keys(validateResult).length) return;
+    const validateResult = validate(expense)
+
+    if (Object.keys(validateResult).length) return
 
     if (editingRowId) {
-      setExpenses((preState) => 
-        preState.map((prevExpense) => {
+      setExpenses((prevState) =>
+        prevState.map((prevExpense) => {
           if (prevExpense.id === editingRowId) {
-            return {...expense, id: editingRowId}
+            return { ...expense, id: editingRowId }
           }
           return prevExpense
         })
       )
+      setExpense({
+        title: '',
+        category: '',
+        amount: '',
+      })
       setEditingRowId('')
       return
     }
@@ -80,14 +86,13 @@ export default function ExpenseForm({
     setExpenses((prevState) => [
       ...prevState,
       { ...expense, id: crypto.randomUUID() },
-    ]);
-
+    ])
     setExpense({
-      title: "",
-      category: "",
-      amount: "",
-    });
-  };
+      title: '',
+      category: '',
+      amount: '',
+    })
+  }
 
   return (
     <form className="expense-form" onSubmit={handleSubmit}>
