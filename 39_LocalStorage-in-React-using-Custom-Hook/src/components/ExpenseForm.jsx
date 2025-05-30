@@ -22,8 +22,8 @@ export default function ExpenseForm({
     title: [
       { required: true, message: "Please enter title" },
       {
-        minLength: 5,
-        message: "Title should be at least 5 character long",
+        minLength: 3,
+        message: "Title should be at least 3 character long",
       },
     ],
     category: [{ required: true, message: "Please select a category" }],
