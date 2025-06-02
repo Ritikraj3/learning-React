@@ -13,9 +13,12 @@ class CounterOld extends Component {
     this.setState({ count: this.state.count - 1 });
   }
 
+  // -------Arrow function --------
+  
+
   // decreaseCount = () => {
   //   this.setState({ count: this.state.count - 1 });
-  // }
+  // } 
 
   render() {
     const { name } = this.props;
