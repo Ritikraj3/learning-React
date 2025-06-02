@@ -6,7 +6,16 @@ class CounterOld extends Component {
     this.state = {
       count: 0,
     };
+    this.decreaseCount = this.decreaseCount.bind(this);
   }
+
+    decreaseCount ()  {
+    this.setState({ count: this.state.count - 1 });
+  }
+
+  // decreaseCount = () => {
+  //   this.setState({ count: this.state.count - 1 });
+  // }
 
   render() {
     const { name } = this.props;
@@ -27,9 +36,7 @@ class CounterOld extends Component {
           <h1 className="text-2xl px-2 font-semibold"> Count: {count} </h1>
 
           <button
-            onClick={function () {
-              this.setState({ count: count - 1 });
-            }.bind(this)}
+            onClick={this.decreaseCount}
             className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded"
           >
             Decrement
