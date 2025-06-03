@@ -7,10 +7,15 @@ class CounterOld extends Component {
       count: 0,
     };
     this.decreaseCount = this.decreaseCount.bind(this);
+    this.increaseCount = this.increaseCount.bind(this);
   }
 
     decreaseCount ()  {
     this.setState({ count: this.state.count - 1 });
+  }
+
+  increaseCount ()  {
+    this.setState({ count: this.state.count + 1 });
   }
 
   // -------Arrow function --------
@@ -30,7 +35,8 @@ class CounterOld extends Component {
         </h1>
         <div className="flex items-center justify-between max-w-md mx-auto mt-4 px-4">
           <button
-            onClick={() => this.setState({ count: count + 1 })}
+            onClick= {this.increaseCount} 
+            // {function () { this.setState({ count: count + 1 })}.bind(this)}
             className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded"
           >
             Increment
