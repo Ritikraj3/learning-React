@@ -78,19 +78,6 @@ react.html – Uses React to render and update UI.
 
 No additional setup is needed.
 
-
----
-
-📷 Screenshots
-
-Traditional DOM (index.html)	React-based UI (react.html)
-
-	
-
-
-(Replace with actual screenshots if needed)
-
-
 ---
 
 ✅ Key Takeaways
